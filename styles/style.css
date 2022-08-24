@@ -12,6 +12,7 @@ body {
     color: white;
     background-color: #6c2ab7;
     width: 100%;
+    overflow-x: hidden;
 }
 
 body, 
@@ -87,12 +88,6 @@ section {
     width: 100%;
 }
 
-
-
-/************************************************************ GRID ********************************************************************/
-
-
-
 .titulo {
     padding-block: 1.8rem;
     padding-inline: 1rem;
@@ -106,77 +101,125 @@ section {
     text-align: center;
 }
 
-.completadas {
-    padding-top: 2rem;
-    padding-bottom: 3rem;
-    margin-inline: 1rem;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    grid-template-areas: 
-    "alta alta media1 media2"
-    "alta alta media3 media4";
+/************************************************* BOOTSTRAP SOLO PARA DESAFIO *******************************************************/
+/************************************************* BOOTSTRAP SOLO PARA DESAFIO *******************************************************/
+/************************************************* BOOTSTRAP SOLO PARA DESAFIO *******************************************************/
+/************************************************* BOOTSTRAP SOLO PARA DESAFIO *******************************************************/
+
+.concretados {
+    margin-block: 2.5rem;
+    margin-inline: .8rem;
+}
+
+.row-index {
+    justify-content: center;
+    gap: 2rem;
+}
+
+.row-pcArmada {
+    display: flex;
+    justify-content: center;
     gap: 1rem;
 }
 
-.completadas ul li{
-    list-style-type: none;
-    text-shadow: 2px 2px black;
+.imgArmadas {
+    width: 22vw;
 }
 
-.completada1 {
-    grid-area: alta;
+
+.card-index {
+    background-image: url(../images/footer.svg);
+    background-position: center center;
+    background-size: cover;
+    text-align: center;
+}
+
+.card-pcArmada {
+    background-image: url(../images/footer.svg);
+    background-position: center center;
+    background-size: cover;
+    text-align: center;
+    width: 23vw;
+    border-radius: 15px;
+}
+
+.card-pcArmada:hover {
+    outline: #cb2eff solid 3px;
+}
+
+.prductos-bs {
+    margin-bottom: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex: 1;
+    gap: 1rem;
+}
+
+.card-productos {
+    background-image: url(../images/footer.svg);
+    background-position: center center;
+    background-size: cover;
+    text-align: center;
+}
+
+.imgTeclado {
+    padding-block: 2.3rem;
+    padding-inline: .5rem;
+}
+
+.sobreNosotros-card-estructura {
+    display: flex;
+    justify-content: space-around;
+    width: 100vw;
+}
+
+.card-sobreNosotros {
+    height: 29vh;
+    width: 18vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    flex-wrap: wrap;
+    border-radius: 40px;
+    gap: 1rem;
+    border: hsla(241, 92%, 31%, 0.238) solid 4px;
+    background-color: hsla(241, 92%, 31%, 0.301);
     text-align: center;
-    color: #00fbff;
-    font-size: 150%;
 }
 
-.completada2 {
-    grid-area: media2;
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    text-align: center
+.contactoLink {
+    color: rgb(15, 178, 232);
+    text-decoration: none;
 }
 
-.completada3 {
-    grid-area: media3;
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    text-align: center
+.tituloCard {
+    text-align: center;
+    font-size: 155%;
 }
 
-.completada4 {
-    grid-area: media4;
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    text-align: center
+.card-text {
+    text-align: center;
 }
 
-.completada5 {
-    grid-area: media1;
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    text-align: center
+.formulario {
+    color: white;
 }
 
-.cajita {
-    border: black solid 3px;
-    background-image: url(../images/footer.svg);
+::placeholder {
+    color:white;
+}
+
+.centrado {
+    padding: 0;
 }
 
 
+
+/************************************************* BOOTSTRAP SOLO PARA DESAFIO *******************************************************/
+/************************************************* BOOTSTRAP SOLO PARA DESAFIO *******************************************************/
+/************************************************* BOOTSTRAP SOLO PARA DESAFIO *******************************************************/
+/************************************************* BOOTSTRAP SOLO PARA DESAFIO *******************************************************/
 
 /***** MARCAS *****/
 
@@ -263,6 +306,7 @@ section {
     padding-block: .2rem;
     padding-inline: 1rem;
 }
+
 
 
 
@@ -365,7 +409,7 @@ i{
 
 
 
-.productos1 {
+/* .productos1 {
     display: grid;
     grid-template-columns: repeat(4, 2fr);
     grid-template-rows: repeat(2, 1fr);
@@ -495,14 +539,14 @@ i{
     background-size: cover;
     background-position: center center;
 }
-
+ */
 
 
 /*************************************************** PRODUCTOS GRID PERIFERICOS ***************************************************************/
 
 
 
-.productos2 {
+/* .productos2 {
     margin-bottom: 3rem;
     display: grid;
     grid-template-columns: repeat(4, 2fr);
@@ -647,7 +691,7 @@ i{
     outline: #cb2eff solid 3px;
 }
 
-
+ */
 
 /***** PCs ARMADAS *****/
 
@@ -716,7 +760,7 @@ i{
     transition: border 150ms cubic-bezier(0.4,0,0.2,1);
     }
 
-.user__label {
+/* .user__label {
     position: absolute;
     left: 15px;
     color: #e8e8e8;
@@ -737,6 +781,7 @@ i{
     padding: 0 .2em;
     color: #ffffff;
     }
+*/
 
 button {
     --glow-color: rgb(176, 121, 227);
@@ -788,7 +833,7 @@ button:active {
         0 0 0.6em .25em var(--glow-color),
         0 0 2.5em 2em var(--glow-spread-color),
         inset 0 0 .5em .25em var(--glow-color);
-}
+} 
 
 /***** SOBRE NOSOTROS *****/
 
@@ -1001,5 +1046,39 @@ button:active {
         display: flex;
         flex-direction: column;
         gap: 4rem;
+    }
+
+    /* SOLO PARA BS */
+
+    .row-pcArmada {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card-pcArmada {
+        width: 90vw;
+    }
+
+    .imgArmadas {
+        width: 70vw;
+    }
+
+    .prductos-bs {
+        margin-inline: 3rem;
+        flex-direction: column;
+    }
+
+    .sobreNosotros-card-estructura {
+        margin-block: -10rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .card-sobreNosotros {
+        width: 70vw;
     }
 }
