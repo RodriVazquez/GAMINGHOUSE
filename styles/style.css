@@ -7,7 +7,7 @@
     list-style-type: none;
     font-family: 'Saira', sans-serif;
 }
- 
+
 body {
     color: white;
     background-color: #6c2ab7;
@@ -29,14 +29,42 @@ section {
     padding-left: 2rem;
 }
 
-.nav {
+.navegacionIndex {
     width: 100vw;
     background-color: rgba(0, 0, 0, 0.8);
-    padding: 1.6rem;
+    padding-inline: 1.6rem;
+    padding-top: 1.6rem;
+    padding-bottom: .6rem;
     z-index: 1;
     position: fixed;
     display: flex;
     justify-content: space-between;
+}
+
+.nav__itemIndex {
+    background-color: rgba(82, 5, 123, 0.9);
+    border-radius: .8rem;
+    padding-inline: 1rem;
+    padding-block: .7rem;
+}
+
+.nav__itemIndex a {
+    text-decoration: none;
+    color: #ffffff;
+    font-family: 'Mouse Memoirs', sans-serif;
+    font-size: 1.8rem;
+}
+
+.nav__itemIndex:hover {
+    text-decoration: underline;
+}
+
+.nav__itemIndex:hover {
+    text-decoration: underline;
+}
+
+.nav__itemIndex.active {
+    text-decoration: underline;
 }
 
 .nav__label,
@@ -58,56 +86,34 @@ section {
     gap: 1rem;
 }
 
-.nav__item {
-    background-color: rgba(82, 5, 123, 0.9);
-    border-radius: .8rem;
-    padding: 1rem;
-} 
-
-.nav__item a {
-    text-decoration: none;
-    color: #ffffff;
-    font-family: 'Mouse Memoirs', sans-serif;
-    font-size: 1.8rem;
-}
-
-.nav__item:hover {
-    text-decoration: underline;
-}
-
-.nav__item.active {
-    text-decoration: underline;
-}
-
-
-.nav__item a:hover {
-    text-decoration: double;
-}
-
 .video {
     width: 100%;
 }
 
+
+
+/* TRABAJOS CONCRETADOS */
+
+
+
 .titulo {
-    padding-block: 1.8rem;
-    padding-inline: 1rem;
+    padding-block: .8rem;
     background-image: url(../images/titulos7.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center cen;
+    background-position: center center;
     font-family: 'Mouse Memoirs', sans-serif;
+    text-align: center;
     font-size: 400%;
     letter-spacing: 2px;
-    text-align: center;
 }
 
-/************************************************* BOOTSTRAP SOLO PARA DESAFIO *******************************************************/
-/************************************************* BOOTSTRAP SOLO PARA DESAFIO *******************************************************/
-/************************************************* BOOTSTRAP SOLO PARA DESAFIO *******************************************************/
-/************************************************* BOOTSTRAP SOLO PARA DESAFIO *******************************************************/
+h2 {
+    margin: 0;
+}
 
 .concretados {
-    margin-block: 2.5rem;
+    padding-block: 4rem;
     margin-inline: .8rem;
 }
 
@@ -116,86 +122,13 @@ section {
     gap: 2rem;
 }
 
-.row-pcArmada {
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
-}
-
-.imgArmadas {
-    width: 22vw;
-}
-
 
 .card-index {
+    width: 21rem;
     background-image: url(../images/footer.svg);
     background-position: center center;
     background-size: cover;
     text-align: center;
-}
-
-.card-pcArmada {
-    background-image: url(../images/footer.svg);
-    background-position: center center;
-    background-size: cover;
-    text-align: center;
-    width: 23vw;
-    border-radius: 15px;
-}
-
-.card-pcArmada:hover {
-    outline: #cb2eff solid 3px;
-}
-
-.prductos-bs {
-    margin-bottom: 1rem;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    flex: 1;
-    gap: 1rem;
-}
-
-.card-productos {
-    background-image: url(../images/footer.svg);
-    background-position: center center;
-    background-size: cover;
-    text-align: center;
-}
-
-.imgTeclado {
-    padding-block: 2.3rem;
-    padding-inline: .5rem;
-}
-
-.sobreNosotros-card-estructura {
-    display: flex;
-    justify-content: space-around;
-    width: 100vw;
-}
-
-.card-sobreNosotros {
-    height: 29vh;
-    width: 18vw;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    flex-wrap: wrap;
-    border-radius: 40px;
-    gap: 1rem;
-    border: hsla(241, 92%, 31%, 0.238) solid 4px;
-    background-color: hsla(241, 92%, 31%, 0.301);
-    text-align: center;
-}
-
-.contactoLink {
-    color: rgb(15, 178, 232);
-    text-decoration: none;
-}
-
-.tituloCard {
-    text-align: center;
-    font-size: 155%;
 }
 
 .card-text {
@@ -215,11 +148,6 @@ section {
 }
 
 
-
-/************************************************* BOOTSTRAP SOLO PARA DESAFIO *******************************************************/
-/************************************************* BOOTSTRAP SOLO PARA DESAFIO *******************************************************/
-/************************************************* BOOTSTRAP SOLO PARA DESAFIO *******************************************************/
-/************************************************* BOOTSTRAP SOLO PARA DESAFIO *******************************************************/
 
 /***** MARCAS *****/
 
@@ -309,7 +237,6 @@ section {
 
 
 
-
 /***** FOOTER *****/
 
 
@@ -328,6 +255,11 @@ footer {
     justify-content: center;
 }
 
+h5 {
+    font-size:small;
+}
+
+
 .redes {
     padding-bottom: .3rem;
     border-bottom: solid rgb(43, 43, 43) 2px;
@@ -337,7 +269,9 @@ footer {
 }
 
 .redes__lista {
+    margin-bottom: 0;
     padding-block: 1rem;
+    padding-left: 0;
     display: flex;
     list-style-type: none;
 }
@@ -354,6 +288,7 @@ i{
 }
 
 .footer__copy {
+    margin-bottom: 0;
     padding-block: .3rem;
     text-align: center;
     text-shadow: 2px 2px black;
@@ -364,14 +299,44 @@ i{
 /*************************************** NAV Y DETALLES DE LAS OTRAS PAGINAS ***************************************/
 
 
+.navegacion {
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 1.6rem;
+    z-index: 1;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav__item {
+    background-color: rgba(82, 5, 123, 0.9);
+    border-radius: .8rem;
+    padding: 1rem;
+} 
+
+.nav__item a {
+    text-decoration: none;
+    color: #ffffff;
+    font-family: 'Mouse Memoirs', sans-serif;
+    font-size: 1.8rem;
+}
+
+.nav__item:hover {
+    text-decoration: underline;
+}
+
+.nav__item.active {
+    text-decoration: underline;
+}
 
 .mainProdcutos {
     padding-top: .01rem;
 }
 
 .titulo2{
-    margin-top: 7.5rem;
-    padding-block: 1.8rem;
+    margin-top: 7.33rem;
+    padding-block: .8rem;
     padding-inline: 1rem;
     background-image: url(../images/titulos7.jpg);
     background-size: cover;
@@ -403,13 +368,31 @@ i{
     padding: 2rem;
 }
 
+.titulo3{
+    padding-block: .8rem;
+    padding-inline: 1rem;
+    background-image: url(../images/titulos7.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    font-family: 'Mouse Memoirs', sans-serif;
+    font-size: 400%;
+    letter-spacing: 2px;
+    text-align: center; 
+}
+
+.headerP {
+    padding-bottom: 7.343rem;
+}
 
 
-/*********************************************** PRODUCTOS GRID COMPONENTES *******************************************************/
+/************************************************************** PRODUCTOS GRID ***************************************************************************/
 
 
 
-/* .productos1 {
+/* COMPONENTES */
+
+.productos1 {
     display: grid;
     grid-template-columns: repeat(4, 2fr);
     grid-template-rows: repeat(2, 1fr);
@@ -422,114 +405,54 @@ i{
 
 .mother1 {
     grid-area: mother1;
-    display:flex;
-    flex-direction:column;
-    justify-content: center;
-    align-items: center;
-    background-image: url(../images/footer.svg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
 }
 
 .mother2 {
     grid-area: mother2;
-    display:flex;
-    flex-direction:column;
-    justify-content: center;
-    align-items: center;
-    background-image: url(../images/footer.svg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
 }
 
 .cpu1 {
     grid-area: cpu1;
-    display:flex;
-    flex-direction:column;
-    justify-content: center;
-    align-items: center;
-    background-image: url(../images/footer.svg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
     }
 
 .cpu2 {
     grid-area: cpu2;
-    display:flex;
-    flex-direction:column;
-    justify-content: center;
-    align-items: center;
-    background-image: url(../images/footer.svg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
 }
 
 .gpu1 {
     grid-area: gpu1;
-    display:flex;
-    flex-direction:column;
-    justify-content: center;
-    align-items: center;
-    background-image: url(../images/footer.svg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
 }
 
 .gpu2 {
     grid-area: gpu2;
-    display:flex;
-    flex-direction:column;
-    justify-content: center;
-    align-items: center;
-    background-image: url(../images/footer.svg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
 }
 
 .ram1 {
     grid-area: ram1;
-    display:flex;
-    flex-direction:column;
-    justify-content: center;
-    align-items: center;
-    background-image: url(../images/footer.svg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
 }
 
 .ram2 {
     grid-area: ram2;
-    display:flex;
-    flex-direction:column;
-    justify-content: center;
-    align-items: center;
-    background-image: url(../images/footer.svg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
 }
 
 .ssd {
     grid-area: ssd;
-    display:flex;
-    flex-direction:column;
-    justify-content: center;
-    align-items: center;
-    background-image: url(../images/footer.svg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
 }
 
 .fuente {
     grid-area: fuente;
+}
+
+.mother1,
+.mother2,
+.cpu1,
+.cpu2,
+.gpu1,
+.gpu2,
+.ram1,
+.ram2,
+.ssd,
+.fuente {
     display:flex;
     flex-direction:column;
     justify-content: center;
@@ -539,14 +462,14 @@ i{
     background-size: cover;
     background-position: center center;
 }
- */
-
-
-/*************************************************** PRODUCTOS GRID PERIFERICOS ***************************************************************/
 
 
 
-/* .productos2 {
+/* PERIFERICOS */
+
+
+
+.productos2 {
     margin-bottom: 3rem;
     display: grid;
     grid-template-columns: repeat(4, 2fr);
@@ -560,114 +483,55 @@ i{
 
 .mouse1 {
     grid-area: mouse1;
-    display:flex;
-    flex-direction:column;
-    justify-content: center;
-    align-items: center;
-    background-image: url(../images/footer.svg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
+    
 }
 
 .mouse2 {
     grid-area: mouse2;
-    display:flex;
-    flex-direction:column;
-    justify-content: center;
-    align-items: center;
-    background-image: url(../images/footer.svg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
 }
 
 .auris2 {
     grid-area: auris2;
-    display:flex;
-    flex-direction:column;
-    justify-content: center;
-    align-items: center;
-    background-image: url(../images/footer.svg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
 }
 
 .auris1 {
     grid-area: auris1;
-    display:flex;
-    flex-direction:column;
-    justify-content: center;
-    align-items: center;
-    background-image: url(../images/footer.svg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
 }
 
 .teclado2 {
     grid-area: teclado2;
-    display:flex;
-    flex-direction:column;
-    justify-content: center;
-    align-items: center;
-    background-image: url(../images/footer.svg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
 }
 
 .monitor2 {
     grid-area: monitor2;
-    display:flex;
-    flex-direction:column;
-    justify-content: center;
-    align-items: center;
-    background-image: url(../images/footer.svg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
 }
 
 .pad {
     grid-area: pad;
-    display:flex;
-    flex-direction:column;
-    justify-content: center;
-    align-items: center;
-    background-image: url(../images/footer.svg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
 }
 
 .silla {
     grid-area: silla;
-    display:flex;
-    flex-direction:column;
-    justify-content: center;
-    align-items: center;
-    background-image: url(../images/footer.svg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
 }
 
 .monitor1 {
     grid-area: monitor1;
-    display:flex;
-    flex-direction:column;
-    justify-content: center;
-    align-items: center;
-    background-image: url(../images/footer.svg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
 }
 
 .redragonT {
     grid-area: redragonT;
+}
+
+.mouse1,
+.mouse2,
+.auris2,
+.auris1,
+.teclado2,
+.monitor2,
+.pad,
+.silla,
+.monitor1,
+.redragonT {
     display:flex;
     flex-direction:column;
     justify-content: center;
@@ -691,9 +555,9 @@ i{
     outline: #cb2eff solid 3px;
 }
 
- */
 
-/***** PCs ARMADAS *****/
+
+/************************************************************* PCs ARMADAS *************************************************************/
 
 
 
@@ -727,7 +591,7 @@ i{
 
 
 
-/***** CONTACTO *****/
+/****************************************************************** CONTACTO *********************************************************************/
 
 
 
@@ -750,7 +614,7 @@ i{
     position: relative;
     }
     
-    .input {
+.input {
     border: solid 1.5px #ffffff;
     border-radius: 1rem;
     background: none;
@@ -758,9 +622,9 @@ i{
     font-size: 1rem;
     color: #f5f5f5;
     transition: border 150ms cubic-bezier(0.4,0,0.2,1);
-    }
+}
 
-/* .user__label {
+.user__label {
     position: absolute;
     left: 15px;
     color: #e8e8e8;
@@ -781,7 +645,6 @@ i{
     padding: 0 .2em;
     color: #ffffff;
     }
-*/
 
 button {
     --glow-color: rgb(176, 121, 227);
@@ -835,62 +698,49 @@ button:active {
         inset 0 0 .5em .25em var(--glow-color);
 } 
 
-/***** SOBRE NOSOTROS *****/
+
+
+/************************************************************* SOBRE NOSOTROS *************************************************************/
+
+
 
 .sobreNosotros {
     background-image: url(./../images/fondo.png);
     background-repeat: no-repeat;
     background-size: cover;
-    padding-block: 14rem;
+    padding-block: 17rem;
     margin-top: -.1rem;
 }
 
-.cajas{
+.sobreNosotros-container {
     display: flex;
     justify-content: space-around;
-    align-items: center;
-    flex-wrap: wrap;
+    width: 100vw;
 }
 
-.caja img {
-    border-radius: 2rem;
+.card-sobreNosotros {
+    height: 29vh;
+    width: 18vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+    border: hsla(241, 92%, 31%, 0.238) solid 4px;
+    background-color: hsla(241, 92%, 31%, 0.301);
+    border-radius: 40px;
+    font-size: 110%;
+    text-align: center;
 }
 
 
-
-/******************************* ESTRUCTURA GRID: PCs ARMADAS, CONTACTO, SOBRE NOSOTROS ****************************************/
-
-
-
-.bodyGrid{
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: .5fr 1fr 1fr 1fr 1fr 1fr .8
-    fr;
-    grid-template-areas: 
-    "headerG  headerG  headerG  headerG"
-    "mainG    mainG    mainG    mainG"
-    "sectionG sectionG sectionG sectionG"
-    "sectionG sectionG sectionG sectionG"
-    "sectionG sectionG sectionG sectionG"
-    "sectionG sectionG sectionG sectionG"
-    "footerG  footerG  footerG  footerG ";
+.contactoLink {
+    color: rgb(15, 178, 232);
+    text-decoration: none;
 }
 
-.headerG {
-    grid-area: headerG;
-}
-
-.mainG {
-    grid-area: mainG;
-}
-
-.sectionG {
-    grid-area: sectionG;
-}
-
-.footerG {
-    grid-area: footerG;
+.tituloCard {
+    text-align: center;
+    font-size: 155%;
 }
 
 
@@ -905,11 +755,13 @@ button:active {
     /***** INDEX *****/
 
 
-    .nav {
-    width: 100%;
-    padding: 1.6rem;
-    margin-bottom: .1rem;
-    background-color: rgb(0, 0, 0);
+    .navegacionIndex {
+        width: 100%;
+        padding-inline: 1.6rem;
+        padding-top: 1.6rem;
+        padding-bottom: 2.1rem;
+        margin-bottom: .1rem;
+        background-color: rgb(0, 0, 0);
     }
 
     .nav__label{
@@ -922,6 +774,7 @@ button:active {
         top: 7.6rem;
         bottom: 0;
         width: 100%;
+        height: 90vh;
         left: 0;
         background-color: #a850ff;
         display: flex;
@@ -1026,6 +879,14 @@ button:active {
     /***** PRODCUTOS, PCs GAMER, SOBRE NOSOTROS *****/
 
 
+    .navegacion {
+        width: 100%;
+        padding: 1.6rem;
+        margin-bottom: .1rem;
+        background-color: rgb(0, 0, 0);
+        }
+    
+
     .subTitulo {
         width: 45vw;
         font-size: 200%;
@@ -1042,35 +903,8 @@ button:active {
         flex-direction: column;
     }
     
-    .cajas {
-        display: flex;
-        flex-direction: column;
-        gap: 4rem;
-    }
-
-    /* SOLO PARA BS */
-
-    .row-pcArmada {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .card-pcArmada {
-        width: 90vw;
-    }
-
-    .imgArmadas {
-        width: 70vw;
-    }
-
-    .prductos-bs {
-        margin-inline: 3rem;
-        flex-direction: column;
-    }
-
-    .sobreNosotros-card-estructura {
-        margin-block: -10rem;
+    .sobreNosotros-container {
+        margin-block: -5rem;
         display: flex;
         flex-direction: column;
         justify-content: center;
