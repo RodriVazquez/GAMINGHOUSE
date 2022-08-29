@@ -122,6 +122,11 @@ h2 {
     gap: 2rem;
 }
 
+.card-index:hover {
+    outline: solid #2559e9 3px;
+}
+
+
 
 .card-index {
     width: 21rem;
@@ -154,16 +159,26 @@ h2 {
 
 
 .marcas {
-    padding-block: .8rem;
-    padding-inline: .3rem;
+    height: 12vh;
     background-image: url(../images/titulo-invertido.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
     display:flex;
-    justify-content: space-between;
-    align-items: baseline;
+    justify-content: space-around;
+    align-items: center;
     flex-wrap: wrap;
+}
+
+.ryzen,
+.gigabyte,
+.geforce,
+.intel,
+.razer,
+.hyperx,
+.redragon,
+.amd {
+    height: 10vh;
 }
 
 
@@ -288,12 +303,14 @@ i{
 }
 
 .footer__copy {
-    margin-bottom: 0;
     padding-block: .3rem;
     text-align: center;
     text-shadow: 2px 2px black;
 }
 
+.footer__copy p {
+    margin-bottom: 0;
+}
 
 
 /*************************************** NAV Y DETALLES DE LAS OTRAS PAGINAS ***************************************/
@@ -552,7 +569,7 @@ i{
 }
 
 .productos__caja:hover{
-    outline: #cb2eff solid 3px;
+    outline: #2559e9 solid 3px;
 }
 
 
@@ -582,7 +599,7 @@ i{
 }
 
 .pc__caja:hover{
-    outline: #cb2eff solid 3px;
+    outline: #2559e9 solid 3px;
 }
 
 .opcional {
@@ -698,6 +715,9 @@ button:active {
         inset 0 0 .5em .25em var(--glow-color);
 } 
 
+.animate__pulse {
+    animation-iteration-count: infinite;
+}
 
 
 /************************************************************* SOBRE NOSOTROS *************************************************************/
@@ -709,7 +729,6 @@ button:active {
     background-repeat: no-repeat;
     background-size: cover;
     padding-block: 17rem;
-    margin-top: -.1rem;
 }
 
 .sobreNosotros-container {
@@ -795,27 +814,14 @@ button:active {
     }
 
     .titulo {
-        padding-block: .4rem
-        ;
+        margin-top: 1rem;
+        padding-block: .4rem;
+        font-size: bold;
     }
 
-    .completadas {
-        padding-inline: 3rem;
+    .concretados {
         padding-top: 2rem;
-        padding-bottom: 3rem;
-        margin-inline: 1rem;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-    
-    .completada1 {
-    color: #ffffff;
-    font-size: 100%;
-    }
-
-    .imagen {
-        height: 22rem;
+        padding-bottom: 4rem;
     }
 
     .marcas {
@@ -855,8 +861,8 @@ button:active {
         grid-area: amd;
     }
 
-    .responsiveMarcas {
-        width: 8.7rem;
+    .marcas {
+        height: 50vh;
     }
 
     .preFooter {
@@ -876,8 +882,17 @@ button:active {
     }
 
 
-    /***** PRODCUTOS, PCs GAMER, SOBRE NOSOTROS *****/
+    /***** PRODCUTOS, PCs GAMER, CONTACTO, SOBRE NOSOTROS *****/
 
+    .titulo2 {
+        font-size: 300%;
+    }
+
+    .titulo3 {
+        margin-top: .313rem;
+        padding-block: .4rem;
+        font-size: 350%;
+    }
 
     .navegacion {
         width: 100%;
