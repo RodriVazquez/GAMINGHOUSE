@@ -1,0 +1,45 @@
+div {
+    h2 {
+        margin: 0;
+    }
+
+    h2.titulo {
+        padding-block: .8rem;
+        background-image: url(../images/titulos7.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        font-family: $fontTitle;
+        text-align: center;
+        font-size: 400%;
+        letter-spacing: 2px;
+    } 
+}
+
+section {
+    background-image: url(../images/fondo.svg);
+    background-size: cover;
+    background-position: center center;
+
+    .concretados {   
+        padding-block: 4rem;
+        margin-inline: .8rem;
+
+        .row-index {
+            justify-content: center;
+            gap: 2rem;
+
+            .card-index {
+                width: 21rem;
+                background-image: url(../images/footer.svg);
+                background-position: center center;
+                background-size: cover;
+                text-align: center;
+
+                &:hover {
+                    outline: $detailsColor solid 3px;
+                }
+            }
+        }
+    }
+}

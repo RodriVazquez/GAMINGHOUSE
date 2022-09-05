@@ -1,0 +1,61 @@
+.preFooter {
+    padding-inline: 2rem;
+    justify-content: space-around;
+    display: flex;
+    flex-wrap: wrap;
+
+    .ubicacion {
+        padding-top: 2rem;
+        padding-bottom: 4rem;
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+
+        .ubicacion__titulo {
+            margin-bottom: 1rem;
+            font-family: $fontTitle;
+            font-size: 200%;
+            letter-spacing: 1.3px;
+        }
+
+        .ubicacion__mapa {
+            width: 35vw;
+            height: 45vh;
+            border-radius: 15px;
+        }
+    }
+
+    .newsletter {
+        display: flex;
+
+        .newsletter__datos {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+
+            .newsletter__datos__titulo {
+                font-family: $fontTitle;
+                font-size: 170%;
+                letter-spacing: 1.5px;
+            }
+
+            p {
+                padding-block: .8rem;
+                text-shadow: 2px 2px black;
+            }
+
+            .formIndex {
+                display: flex;
+                gap: .5rem;
+
+                div {
+                    .submitIndex { 
+                        margin-top: .5rem;
+                        padding-block: .2rem;
+                        padding-inline: 1rem;
+                    }
+                }
+            }
+        }
+    } 
+}

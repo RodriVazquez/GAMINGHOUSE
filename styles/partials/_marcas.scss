@@ -1,0 +1,22 @@
+.marcas {
+    height: 12vh;
+    background-image: url(../images/titulo-invertido.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+
+    .ryzen,
+    .gigabyte,
+    .geforce,
+    .intel,
+    .razer,
+    .hyperx,
+    .redragon,
+    .amd {
+        height: 10vh;
+    }   
+}
