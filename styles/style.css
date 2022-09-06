@@ -136,21 +136,9 @@ h2 {
     text-align: center;
 }
 
-.card-text {
-    text-align: center;
-}
-
-.formulario {
-    color: white;
-}
-
-::placeholder {
-    color:white;
-}
-
-.centrado {
+.card-list {
     padding: 0;
-}
+} 
 
 
 
@@ -347,9 +335,18 @@ i{
     text-decoration: underline;
 }
 
-.mainProdcutos {
+.mainProductos {
     padding-top: .01rem;
 }
+
+
+
+
+
+
+
+
+
 
 .titulo2{
     margin-top: 7.33rem;
@@ -385,7 +382,7 @@ i{
     padding: 2rem;
 }
 
-.titulo3{
+/* .titulo3{
     padding-block: .8rem;
     padding-inline: 1rem;
     background-image: url(../images/titulos7.jpg);
@@ -401,6 +398,16 @@ i{
 .headerP {
     padding-bottom: 7.343rem;
 }
+
+
+
+ PARA OTRAS PAGINAS NO COLGAR !!!!!!!!!!!!!!!!!!!!!!!!!!*/
+
+
+
+
+
+
 
 
 /************************************************************** PRODUCTOS GRID ***************************************************************************/
@@ -762,7 +769,9 @@ button:active {
     font-size: 155%;
 }
 
-
+.card-text {
+    text-align: center;
+}
 
 /********************************************* MEDIA QUERIES *******************************************************/
 

@@ -1,0 +1,198 @@
+.mainProductos {
+    padding-top: .01rem;
+
+    .titulo2{
+        margin-top: 7.33rem; 
+        padding-block: .8rem;
+        padding-inline: 1rem;
+        background-image: url(../images/titulos7.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        font-family: 'Mouse Memoirs', sans-serif;
+        font-size: 400%;
+        letter-spacing: 2px;
+        text-align: center;
+    }
+}
+
+section {
+    .displaySubTitulo {
+        display: flex;
+        justify-content: center;
+        padding: 2rem;
+
+        .subTitulo {
+            width: 20vw;
+            padding-block: .3rem;
+            margin-block: .3rem;
+            margin-left: .7rem;
+            text-align: center;
+            border: solid black 3px;
+            border-radius: 10px;
+            background-color: #2559e9;
+            font-family: 'Mouse Memoirs', sans-serif;
+            font-size: 250%;
+            letter-spacing: 1.5px;
+        }    
+    }
+
+        .productos1 {
+            display: grid;
+            grid-template-columns: repeat(4, 2fr);
+            grid-template-rows: repeat(2, 1fr);
+            grid-template-areas: 
+            "gpu1 gpu1 gpu1 gpu1"
+            "mother2 cpu1 cpu2 mother1"
+            "ram1 ram2 fuente ssd"
+            "gpu2 gpu2 gpu2 gpu2";
+
+            .mother1 {
+                grid-area: mother1;
+            }
+            
+            .mother2 {
+                grid-area: mother2;
+            }
+            
+            .cpu1 {
+                grid-area: cpu1;
+                }
+            
+            .cpu2 {
+                grid-area: cpu2;
+            }
+            
+            .gpu1 {
+                grid-area: gpu1;
+            }
+            
+            .gpu2 {
+                grid-area: gpu2;
+            }
+            
+            .ram1 {
+                grid-area: ram1;
+            }
+            
+            .ram2 {
+                grid-area: ram2;
+            }
+            
+            .ssd {
+                grid-area: ssd;
+            }
+            
+            .fuente {
+                grid-area: fuente;
+            }
+            
+            .mother1,
+            .mother2,
+            .cpu1,
+            .cpu2,
+            .gpu1,
+            .gpu2,
+            .ram1,
+            .ram2,
+            .ssd,
+            .fuente {
+                display:flex;
+                flex-direction:column;
+                justify-content: center;
+                align-items: center;
+                background-image: url(../images/footer.svg);
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center center;
+            }
+        }
+
+        .productos2 {
+            margin-bottom: 3rem;
+            display: grid;
+            grid-template-columns: repeat(4, 2fr);
+            grid-template-rows: repeat(2, 1fr);
+            grid-template-areas: 
+            "monitor2 monitor2 monitor2 monitor2"
+            "mouse1 mouse2 auris2 monitor1"
+            "pad silla redragonT teclado2"
+            "auris1 auris1 auris1 auris1";
+        }
+
+        .mouse1 {
+            grid-area: mouse1;
+            
+        }
+        
+        .mouse2 {
+            grid-area: mouse2;
+        }
+        
+        .auris2 {
+            grid-area: auris2;
+        }
+        
+        .auris1 {
+            grid-area: auris1;
+        }
+        
+        .teclado2 {
+            grid-area: teclado2;
+        }
+        
+        .monitor2 {
+            grid-area: monitor2;
+        }
+        
+        .pad {
+            grid-area: pad;
+        }
+        
+        .silla {
+            grid-area: silla;
+        }
+        
+        .monitor1 {
+            grid-area: monitor1;
+        }
+        
+        .redragonT {
+            grid-area: redragonT;
+        }
+        
+        .mouse1,
+        .mouse2,
+        .auris2,
+        .auris1,
+        .teclado2,
+        .monitor2,
+        .pad,
+        .silla,
+        .monitor1,
+        .redragonT {
+            display:flex;
+            flex-direction:column;
+            justify-content: center;
+            align-items: center;
+            background-image: url(../images/footer.svg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center center;
+        }
+
+        .productos__caja {
+            padding: 0.8rem;
+            margin-inline: 0.8rem;
+            margin-block: 0.4rem;
+            border-radius: 2px;
+            text-align: center;
+            flex: 1;
+
+            &:hover {
+                outline: $detailsColor solid 3px;
+            }
+        }
+    }
+    
+    

@@ -109,6 +109,9 @@ section .concretados .row-index .card-index {
 section .concretados .row-index .card-index:hover {
   outline: #2559e9 solid 3px;
 }
+section .concretados .row-index .card-index .card-body .card-list {
+  padding: 0;
+}
 
 .marcas {
   height: 12vh;
@@ -229,4 +232,189 @@ footer .footer__copy {
 }
 footer .footer__copy p {
   margin-bottom: 0;
+}
+
+header .navegacion {
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 1.6rem;
+  z-index: 1;
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+}
+header .navegacion .nav__menu .nav__item {
+  background-color: rgba(82, 5, 123, 0.9);
+  border-radius: 0.8rem;
+  padding: 1rem;
+}
+header .navegacion .nav__menu .nav__item a {
+  text-decoration: none;
+  color: #ffffff;
+  font-family: "Mouse Memoirs", sans-serif;
+  font-size: 1.8rem;
+}
+header .navegacion .nav__menu .nav__item:hover {
+  text-decoration: underline;
+}
+header .navegacion .nav__menu .nav__item.active {
+  text-decoration: underline;
+}
+
+.mainProductos {
+  padding-top: 0.01rem;
+}
+.mainProductos .titulo2 {
+  margin-top: 7.33rem;
+  padding-block: 0.8rem;
+  padding-inline: 1rem;
+  background-image: url(../images/titulos7.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  font-family: "Mouse Memoirs", sans-serif;
+  font-size: 400%;
+  letter-spacing: 2px;
+  text-align: center;
+}
+
+section .displaySubTitulo {
+  display: flex;
+  justify-content: center;
+  padding: 2rem;
+}
+section .displaySubTitulo .subTitulo {
+  width: 20vw;
+  padding-block: 0.3rem;
+  margin-block: 0.3rem;
+  margin-left: 0.7rem;
+  text-align: center;
+  border: solid black 3px;
+  border-radius: 10px;
+  background-color: #2559e9;
+  font-family: "Mouse Memoirs", sans-serif;
+  font-size: 250%;
+  letter-spacing: 1.5px;
+}
+section .productos1 {
+  display: grid;
+  grid-template-columns: repeat(4, 2fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-areas: "gpu1 gpu1 gpu1 gpu1" "mother2 cpu1 cpu2 mother1" "ram1 ram2 fuente ssd" "gpu2 gpu2 gpu2 gpu2";
+}
+section .productos1 .mother1 {
+  grid-area: mother1;
+}
+section .productos1 .mother2 {
+  grid-area: mother2;
+}
+section .productos1 .cpu1 {
+  grid-area: cpu1;
+}
+section .productos1 .cpu2 {
+  grid-area: cpu2;
+}
+section .productos1 .gpu1 {
+  grid-area: gpu1;
+}
+section .productos1 .gpu2 {
+  grid-area: gpu2;
+}
+section .productos1 .ram1 {
+  grid-area: ram1;
+}
+section .productos1 .ram2 {
+  grid-area: ram2;
+}
+section .productos1 .ssd {
+  grid-area: ssd;
+}
+section .productos1 .fuente {
+  grid-area: fuente;
+}
+section .productos1 .mother1,
+section .productos1 .mother2,
+section .productos1 .cpu1,
+section .productos1 .cpu2,
+section .productos1 .gpu1,
+section .productos1 .gpu2,
+section .productos1 .ram1,
+section .productos1 .ram2,
+section .productos1 .ssd,
+section .productos1 .fuente {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url(../images/footer.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+section .productos2 {
+  margin-bottom: 3rem;
+  display: grid;
+  grid-template-columns: repeat(4, 2fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-areas: "monitor2 monitor2 monitor2 monitor2" "mouse1 mouse2 auris2 monitor1" "pad silla redragonT teclado2" "auris1 auris1 auris1 auris1";
+}
+section .mouse1 {
+  grid-area: mouse1;
+}
+section .mouse2 {
+  grid-area: mouse2;
+}
+section .auris2 {
+  grid-area: auris2;
+}
+section .auris1 {
+  grid-area: auris1;
+}
+section .teclado2 {
+  grid-area: teclado2;
+}
+section .monitor2 {
+  grid-area: monitor2;
+}
+section .pad {
+  grid-area: pad;
+}
+section .silla {
+  grid-area: silla;
+}
+section .monitor1 {
+  grid-area: monitor1;
+}
+section .redragonT {
+  grid-area: redragonT;
+}
+section .mouse1,
+section .mouse2,
+section .auris2,
+section .auris1,
+section .teclado2,
+section .monitor2,
+section .pad,
+section .silla,
+section .monitor1,
+section .redragonT {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url(../images/footer.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+section .productos__caja {
+  padding: 0.8rem;
+  margin-inline: 0.8rem;
+  margin-block: 0.4rem;
+  border-radius: 2px;
+  text-align: center;
+  flex: 1;
+}
+section .productos__caja:hover {
+  outline: #2559e9 solid 3px;
 }/*# sourceMappingURL=styles.css.map */

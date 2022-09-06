@@ -39,6 +39,12 @@ section {
                 &:hover {
                     outline: $detailsColor solid 3px;
                 }
+
+                .card-body{
+                    .card-list {
+                        padding: 0;
+                    }
+                }
             }
         }
     }
