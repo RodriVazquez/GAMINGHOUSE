@@ -1,0 +1,40 @@
+.sobreNosotros {
+    background-image: url(./../images/fondo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-block: 17rem;
+    
+    .sobreNosotros-container {
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        gap: 1.5rem;
+        
+        .card-sobreNosotros {
+            height: 29vh;
+            width: 18vw;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 1rem;
+            border: hsla(241, 92%, 31%, 0.238) solid 4px;
+            background-color: hsla(241, 92%, 31%, 0.301);
+            border-radius: 40px;
+            font-size: 110%;
+            text-align: center;
+            
+            .tituloCard{
+                text-align: center;
+                font-size: 155%;
+            }
+            .card-text {
+                text-align: center;
+
+                .contactoLink {
+                    color: rgb(15, 178, 232);
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}

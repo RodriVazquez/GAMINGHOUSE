@@ -1,0 +1,238 @@
+@media screen and (max-width: 600px) {
+    header {
+        .navegacionIndex {
+            width: 100%;
+            padding-inline: 1.6rem;
+            padding-top: 1.6rem;
+            padding-bottom: 2.1rem;
+            margin-bottom: .1rem;
+            background-color: rgb(0, 0, 0);
+
+            .nav__label {
+                display: block;
+                cursor: pointer;
+            }
+
+            .nav__input:checked + .nav__menu {
+                    background-color: #a850ff;
+                    clip-path: circle(100% at center);
+                }
+            }
+
+            .nav__menu {
+                position: fixed;
+                top: 7.6rem;
+                bottom: 0;
+                width: 100%;
+                height: 90vh;
+                left: 0;
+                background-color: #a850ff;
+                display: flex;
+                justify-content: space-evenly;
+                flex-direction: column;
+                align-items: center;
+                clip-path: circle(0 at center);
+                transition: clip-path .7s ease-in-out;
+            }
+        }
+    
+
+    main {
+        .video {
+            margin-top: 7.6rem;
+        }
+    }
+
+    div {
+        .titulo {
+            padding-block: .4rem;
+            font-size: bold;
+        }
+    }
+
+    section {
+        .concretados {
+            padding-top: 2rem;
+            padding-bottom: 4rem;
+        }
+
+        .marcas {
+            height: 50vh;
+            display: grid;
+            justify-items: center;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: repeat(4, 1fr);
+            grid-template-areas: 
+            "ryzen gigabyte"
+            "geforce intel"
+            "razer hyperx"
+            "redragon amd";
+
+            .ryzen {
+                grid-area: ryzen;
+            }
+            .gigabyte {
+                grid-area: gigabyte;
+            }
+            .geforce {
+                grid-area: geforce;
+            }
+            .intel {
+                grid-area: intel;
+            }
+            .razer {
+                grid-area: razer;
+            }
+            .hyperx {
+                grid-area: hyperx;
+            }
+            .redragon {
+                grid-area: redragon;
+            }
+            .amd {
+                grid-area: amd;
+            }
+        }
+        .preFooter {
+            padding-bottom: 3rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            
+            .ubicacion {
+                .ubicacion__mapa {
+                    width: 70vw;
+                }
+            }
+
+            .newsletter {
+                .newsletter__datos{
+                    .formIndex {
+                        .input__group {
+                            .input {
+                                &:focus ~ label,
+                                &:valid ~ label {
+                                    background-color: #6C009E;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    
+    /*** NAV de las 4 páginas (no index) ***/
+
+    header {
+        .navegacion {
+            width: 100%;
+            padding: 1.6rem;
+            margin-bottom: .1rem;
+            background-color: rgb(0, 0, 0);
+
+            .nav__label {
+                display: block;
+                cursor: pointer;
+            }
+
+            .nav__input:checked + .nav__menu {
+                background-color: #a850ff;
+                clip-path: circle(100% at center);
+            }
+        }
+    }
+    .navegacionIndex {
+        width: 100%;
+        padding-inline: 1.6rem;
+        padding-top: 1.6rem;
+        padding-bottom: 2.1rem;
+        margin-bottom: .1rem;
+        background-color: rgb(0, 0, 0);
+
+        .nav__label {
+            display: block;
+            cursor: pointer;
+        }
+
+        .nav__input:checked + .nav__menu {
+                background-color: #a850ff;
+                clip-path: circle(100% at center);
+            }
+
+        .nav__menu {
+            position: fixed;
+            top: 7.6rem;
+            bottom: 0;
+            width: 100%;
+            height: 90vh;
+            left: 0;
+            background-color: #a850ff;
+            display: flex;
+            justify-content: space-evenly;
+            flex-direction: column;
+            align-items: center;
+            clip-path: circle(0 at center);
+            transition: clip-path .7s ease-in-out;
+        }    
+    }
+
+    /*** PRODUCTOS ***/
+
+    .mainProductos {
+        .titulo2 {
+            font-size: 300%;
+        }
+    }
+
+    section {
+        .displaySubTitulo {
+            .subTitulo {
+                width: 45vw;
+                font-size: 200%;
+            }
+        }
+
+        .productos1,
+        .productos2 {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+
+    /*** PCs ARMADAS ***/ 
+
+    main {
+        .titulo3 {
+            margin-top: .313rem;
+            padding-block: .4rem;
+            font-size: 350%;
+        }
+    }
+
+    section {
+        .pc {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+
+    /*** SOBRE NOSOTROS ***/ 
+
+    .sobreNosotros {
+        .sobreNosotros-container {
+            margin-block: -5rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 1rem;
+
+            .card-sobreNosotros {
+                width: 70vw;
+            }
+        }
+    }
+}

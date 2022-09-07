@@ -1,0 +1,33 @@
+section {
+    .pc {
+        padding: 2rem;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-content: center;
+        gap: 3rem;
+        
+        .pc__caja {
+            padding: 1rem;
+            background-image: url(../images/footer.svg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center center;
+            border-radius: 1rem;
+            text-align: center;
+            flex: 1;
+
+            &:hover {
+                outline: $detailsColor solid 3px;
+            }
+
+            ul {
+                li {
+                    .opcional {
+                        color: #ff00fb;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -9,7 +9,7 @@
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center center;
-        font-family: 'Mouse Memoirs', sans-serif;
+        font-family: $fontTitle;
         font-size: 400%;
         letter-spacing: 2px;
         text-align: center;
@@ -30,8 +30,8 @@ section {
             text-align: center;
             border: solid black 3px;
             border-radius: 10px;
-            background-color: #2559e9;
-            font-family: 'Mouse Memoirs', sans-serif;
+            background-color: $detailsColor;
+            font-family: $fontTitle;
             font-size: 250%;
             letter-spacing: 1.5px;
         }    
