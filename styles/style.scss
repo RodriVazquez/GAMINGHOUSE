@@ -1,16 +1,28 @@
 @import "./partials/variables";
 @import "./partials/reset";
 @import "./partials/body";
+
+    /*** INDEX ***/
 @import "./partials/header";
 @import "./partials/video";
 @import "./partials/trabajosConcretados";
 @import "./partials/marcas";
 @import "./partials/prefooter";
 @import "./partials/footer.scss";
+
+    /*** NAV de las otras 4 paginas ***/
 @import "./partials/nav4Paginas";
+
+    /*** Productos ***/
 @import "./partials/productos.scss";
+
+    /*** PCs Armadas Y Contacto ***/
 @import "./partials/maquetado-pcsArmadas-Contacto";
 @import "./partials/pcsArmadas";
 @import "./partials/contacto";
+
+    /*** Sobre Nosotros ***/
 @import "./partials/sobreNosotros";
+
+    /*** Media Queries ***/
 @import "./partials/mq600px";

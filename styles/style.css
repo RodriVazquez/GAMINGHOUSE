@@ -16,6 +16,7 @@ body {
   overflow-x: hidden;
 }
 
+/*** INDEX ***/
 header .navegacionIndex {
   width: 100vw;
   background-color: rgba(0, 0, 0, 0.8);
@@ -309,6 +310,7 @@ footer .footer__copy p {
   margin-bottom: 0;
 }
 
+/*** NAV de las otras 4 paginas ***/
 header .navegacion {
   width: 100vw;
   background-color: rgba(0, 0, 0, 0.8);
@@ -358,6 +360,7 @@ header .navegacion .nav__menu .nav__item.active {
   text-decoration: underline;
 }
 
+/*** Productos ***/
 .mainProductos {
   padding-top: 0.01rem;
 }
@@ -516,6 +519,7 @@ section .productos__caja:hover {
   outline: #2559e9 solid 3px;
 }
 
+/*** PCs Armadas Y Contacto ***/
 .headerP {
   padding-bottom: 7.343rem;
 }
@@ -647,6 +651,7 @@ section .formulario div .animate__pulse {
           animation-iteration-count: infinite;
 }
 
+/*** Sobre Nosotros ***/
 .sobreNosotros {
   background-image: url(./../images/fondo.png);
   background-repeat: no-repeat;
@@ -684,6 +689,7 @@ section .formulario div .animate__pulse {
   text-decoration: none;
 }
 
+/*** Media Queries ***/
 @media screen and (max-width: 600px) {
   header .navegacionIndex {
     width: 100%;
