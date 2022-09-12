@@ -1,0 +1,171 @@
+@media screen and (max-width: 1024px) {
+    
+    header {
+        .navegacionIndex {
+            background-color: black;
+
+            a {
+                .logo {
+                    padding-left: 1rem;
+                }
+            }
+
+            .nav__menu {
+                gap: .8rem;
+
+                .nav__itemIndex {
+                    padding-inline: .3rem;
+                }
+            }
+        }
+    }
+
+    main {
+        .video {
+            margin-top: 7.3rem;
+        }
+    }
+
+    section {
+        .concretados {
+            .row-index {
+                .card-index {
+                    width: 18rem;
+                }
+            }
+        }
+
+        .marcas {
+            margin-left: -.65rem;
+            
+            .ryzen,
+            .gigabyte,
+            .geforce,
+            .intel,
+            .razer,
+            .hyperx,
+            .redragon,
+            .amd {
+                width: 12vw;
+            }
+        }
+
+        .preFooter {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-bottom: 2.8rem;
+
+            .ubicacion {
+                .ubicacion__mapa {
+                    width: 60vw;
+                }
+            }
+
+            .newsletter {
+                text-align: center;
+
+                .newsletter__datos {
+                    .formIndex {
+                        .submitIndex {
+                            margin-left: 1rem;
+                        }
+                    }
+                }
+            }
+        }
+    }    
+    
+    /*** Nav de las demás páginas ***/ 
+
+    header {
+        .navegacion {
+        background-color: black;
+
+            a {
+                .logo {
+                    padding-left: 1rem;
+                }
+            }
+
+            .nav__menu {
+                gap: .8rem;
+
+                .nav__item {
+                    padding-inline: .3rem;
+                }
+            }
+        }    
+    }
+    
+    /*** PRODUCTOS ***/ 
+
+    section {
+        .productos1 {
+            .mother1 {
+                img {
+                width: 18vw;
+                }
+            }
+
+            .mother2 {
+                img {
+                width: 18vw;
+                }
+            }
+
+            .cpu2 {
+                img {
+                width: 18vw;
+                }
+            }
+
+            .cpu1 {
+                img {
+                width: 18vw;
+                }
+            }
+
+            .fuente {
+                img {
+                width: 20vw;
+                }
+            }
+        }
+
+        .productos2 {
+            .teclado1 {
+                img {
+                width: 18vw;
+                }
+            }
+
+            .redragonT {
+                img {
+                width: 18vw;
+                }
+            }
+
+            .auris2 {
+                img {
+                width: 18vw;
+                }
+            }
+        }
+    }
+
+    /*** SOBRE NOSOTROS ***/ 
+    .sobreNosotros {
+        .sobreNosotros-container {
+            margin-top: -3rem;
+            margin-bottom: -10rem;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            .card-sobreNosotros {
+                width: 50vw;
+            }
+        }
+    }
+}

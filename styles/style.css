@@ -74,10 +74,8 @@ main .video {
   width: 100%;
 }
 
-div h2 {
+div .titulo {
   margin: 0;
-}
-div h2.titulo {
   padding-block: 0.8rem;
   background-image: url(../images/titulos7.jpg);
   background-size: cover;
@@ -117,6 +115,7 @@ section .concretados .row-index .card-index .card-body .card-list {
 }
 
 .marcas {
+  margin-left: -0.9%;
   height: 12vh;
   background-image: url(../images/titulo-invertido.jpg);
   background-size: cover;
@@ -292,63 +291,15 @@ footer .redes .redes__lista {
   padding-left: 0;
   display: flex;
   list-style-type: none;
-  /* .map-instagram,
-  .map-twitter,
-  .map-youtube,
-  .map-whatsapp {
-      padding-inline: .8rem;
-  } Comentado para no perderlo en la entrega de SASS 2*/
-  /* MAP */
-  /* MAP */
-  /* MAP-GET */
-  /* MAP-GET */
-  /* EXTEND */
-  /* EXTEND */
-  /* MIXIN */
-  /* MIXIN */
 }
 footer .redes .redes__lista li a i {
   color: white;
 }
-footer .redes .redes__lista .map-whatsapp, footer .redes .redes__lista .map-instagram,
-footer .redes .redes__lista .map-twitter,
-footer .redes .redes__lista .map-youtube {
-  background-color: #00cf00;
-}
-footer .redes .redes__lista .map-instagram {
-  background-color: #f93d78;
-}
-footer .redes .redes__lista .map-twitter {
-  background-color: #00bfff;
-}
-footer .redes .redes__lista .map-youtube {
-  background-color: #db1717;
-}
-footer .redes .redes__lista .map-instagram {
-  background-color: #f93d78;
-}
-footer .redes .redes__lista .map-whatsapp:hover, footer .redes .redes__lista .map-instagram:hover,
-footer .redes .redes__lista .map-twitter:hover,
-footer .redes .redes__lista .map-youtube:hover {
-  outline: #2559e9 solid 3px;
-}
-footer .redes .redes__lista .map-instagram,
-footer .redes .redes__lista .map-twitter,
-footer .redes .redes__lista .map-youtube {
-  border-radius: 50%;
-}
-footer .redes .redes__lista .map-instagram:hover,
-footer .redes .redes__lista .map-twitter:hover,
-footer .redes .redes__lista .map-youtube:hover {
-  outline: white solid 5px;
-}
-footer .redes .redes__lista .map-instagram,
-footer .redes .redes__lista .map-whatsapp,
-footer .redes .redes__lista .map-twitter,
-footer .redes .redes__lista .map-youtube {
-  padding-inline: 1.8rem;
-  padding-block: 1rem;
-  margin-inline: 1rem;
+footer .redes .redes__lista .instagram,
+footer .redes .redes__lista .twitter,
+footer .redes .redes__lista .youtube,
+footer .redes .redes__lista .whatsapp {
+  padding-inline: 0.8rem;
 }
 footer .footer__copy {
   padding-block: 0.3rem;
@@ -739,6 +690,103 @@ section .formulario div .animate__pulse {
 }
 
 /*** Media Queries ***/
+@media screen and (max-width: 1024px) {
+  header .navegacionIndex {
+    background-color: black;
+  }
+  header .navegacionIndex a .logo {
+    padding-left: 1rem;
+  }
+  header .navegacionIndex .nav__menu {
+    gap: 0.8rem;
+  }
+  header .navegacionIndex .nav__menu .nav__itemIndex {
+    padding-inline: 0.3rem;
+  }
+  main .video {
+    margin-top: 7.3rem;
+  }
+  section .concretados .row-index .card-index {
+    width: 18rem;
+  }
+  section .marcas {
+    margin-left: -0.65rem;
+  }
+  section .marcas .ryzen,
+section .marcas .gigabyte,
+section .marcas .geforce,
+section .marcas .intel,
+section .marcas .razer,
+section .marcas .hyperx,
+section .marcas .redragon,
+section .marcas .amd {
+    width: 12vw;
+  }
+  section .preFooter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 2.8rem;
+  }
+  section .preFooter .ubicacion .ubicacion__mapa {
+    width: 60vw;
+  }
+  section .preFooter .newsletter {
+    text-align: center;
+  }
+  section .preFooter .newsletter .newsletter__datos .formIndex .submitIndex {
+    margin-left: 1rem;
+  }
+  /*** Nav de las demás páginas ***/
+  header .navegacion {
+    background-color: black;
+  }
+  header .navegacion a .logo {
+    padding-left: 1rem;
+  }
+  header .navegacion .nav__menu {
+    gap: 0.8rem;
+  }
+  header .navegacion .nav__menu .nav__item {
+    padding-inline: 0.3rem;
+  }
+  /*** PRODUCTOS ***/
+  section .productos1 .mother1 img {
+    width: 18vw;
+  }
+  section .productos1 .mother2 img {
+    width: 18vw;
+  }
+  section .productos1 .cpu2 img {
+    width: 18vw;
+  }
+  section .productos1 .cpu1 img {
+    width: 18vw;
+  }
+  section .productos1 .fuente img {
+    width: 20vw;
+  }
+  section .productos2 .teclado1 img {
+    width: 18vw;
+  }
+  section .productos2 .redragonT img {
+    width: 18vw;
+  }
+  section .productos2 .auris2 img {
+    width: 18vw;
+  }
+  /*** SOBRE NOSOTROS ***/
+  .sobreNosotros .sobreNosotros-container {
+    margin-top: -3rem;
+    margin-bottom: -10rem;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .sobreNosotros .sobreNosotros-container .card-sobreNosotros {
+    width: 50vw;
+  }
+}
 @media screen and (max-width: 600px) {
   header .navegacionIndex {
     width: 100%;
@@ -758,6 +806,7 @@ section .formulario div .animate__pulse {
             clip-path: circle(100% at center);
   }
   header .nav__menu {
+    padding-block: 5rem;
     position: fixed;
     top: 7.6rem;
     bottom: 0;
@@ -780,13 +829,17 @@ section .formulario div .animate__pulse {
   }
   div .titulo {
     padding-block: 0.4rem;
-    font-size: bold;
+    font-size: 350%;
   }
   section .concretados {
     padding-top: 2rem;
     padding-bottom: 4rem;
   }
+  section .concretados .row-index .card-index {
+    width: 23rem;
+  }
   section .marcas {
+    margin-left: 0;
     height: 50vh;
     display: grid;
     justify-items: center;
@@ -796,27 +849,51 @@ section .formulario div .animate__pulse {
   }
   section .marcas .ryzen {
     grid-area: ryzen;
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
   }
   section .marcas .gigabyte {
     grid-area: gigabyte;
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
   }
   section .marcas .geforce {
     grid-area: geforce;
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
   }
   section .marcas .intel {
     grid-area: intel;
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
   }
   section .marcas .razer {
     grid-area: razer;
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
   }
   section .marcas .hyperx {
     grid-area: hyperx;
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
   }
   section .marcas .redragon {
     grid-area: redragon;
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
   }
   section .marcas .amd {
     grid-area: amd;
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
   }
   section .preFooter {
     padding-bottom: 3rem;
@@ -826,7 +903,11 @@ section .formulario div .animate__pulse {
     align-items: center;
   }
   section .preFooter .ubicacion .ubicacion__mapa {
+    height: 30vh;
     width: 70vw;
+  }
+  section .preFooter .newsletter {
+    margin-left: -2%;
   }
   section .preFooter .newsletter .newsletter__datos .formIndex .input__group .input:focus ~ label, section .preFooter .newsletter .newsletter__datos .formIndex .input__group .input:valid ~ label {
     background-color: #6C009E;
@@ -847,40 +928,8 @@ section .formulario div .animate__pulse {
     -webkit-clip-path: circle(100% at center);
             clip-path: circle(100% at center);
   }
-  .navegacionIndex {
-    width: 100%;
-    padding-inline: 1.6rem;
-    padding-top: 1.6rem;
-    padding-bottom: 2.1rem;
-    margin-bottom: 0.1rem;
-    background-color: rgb(0, 0, 0);
-  }
-  .navegacionIndex .nav__label {
-    display: block;
-    cursor: pointer;
-  }
-  .navegacionIndex .nav__input:checked + .nav__menu {
-    background-color: #a850ff;
-    -webkit-clip-path: circle(100% at center);
-            clip-path: circle(100% at center);
-  }
-  .navegacionIndex .nav__menu {
-    position: fixed;
-    top: 7.6rem;
-    bottom: 0;
-    width: 100%;
-    height: 90vh;
-    left: 0;
-    background-color: #a850ff;
-    display: flex;
-    justify-content: space-evenly;
-    flex-direction: column;
-    align-items: center;
-    -webkit-clip-path: circle(0 at center);
-            clip-path: circle(0 at center);
-    transition: -webkit-clip-path 0.7s ease-in-out;
-    transition: clip-path 0.7s ease-in-out;
-    transition: clip-path 0.7s ease-in-out, -webkit-clip-path 0.7s ease-in-out;
+  header .navegacion .nav__menu {
+    padding-block: 5rem;
   }
   /*** PRODUCTOS ***/
   .mainProductos .titulo2 {
@@ -890,29 +939,79 @@ section .formulario div .animate__pulse {
     width: 45vw;
     font-size: 200%;
   }
-  section .productos1,
-section .productos2 {
+  section .productos1 {
     display: flex;
     flex-direction: column;
+  }
+  section .productos1 .mother1 img {
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+  }
+  section .productos1 .mother2 img {
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+  }
+  section .productos1 .cpu2 img {
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+  }
+  section .productos1 .cpu1 img {
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+  }
+  section .productos1 .fuente img {
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+  }
+  section .productos2 {
+    display: flex;
+    flex-direction: column;
+  }
+  section .productos2 .teclado1 img {
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+  }
+  section .productos2 .redragonT img {
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+  }
+  section .productos2 .auris2 img {
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
   }
   /*** PCs ARMADAS ***/
   main .titulo3 {
     margin-top: 0.313rem;
     padding-block: 0.4rem;
-    font-size: 350%;
+    font-size: 300%;
   }
   section .pc {
     display: flex;
     flex-direction: column;
   }
+  section .pc .pc__caja {
+    width: 70vw;
+  }
+  section .pc .pc__caja img {
+    width: 65vw;
+  }
   /*** SOBRE NOSOTROS ***/
   .sobreNosotros .sobreNosotros-container {
-    margin-block: -5rem;
+    margin-top: -7rem;
+    margin-bottom: -14rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 1rem;
+    gap: 1.2rem;
   }
   .sobreNosotros .sobreNosotros-container .card-sobreNosotros {
     width: 70vw;
