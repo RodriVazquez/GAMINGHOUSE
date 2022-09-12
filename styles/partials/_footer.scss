@@ -38,61 +38,12 @@ footer {
                 }
             }
 
-            .map-instagram,
-            .map-twitter,
-            .map-youtube,
-            .map-whatsapp {
+            .instagram,
+            .twitter,
+            .youtube,
+            .whatsapp {
                 padding-inline: .8rem;
             }
-
-            /* MAP */
-            @each $redSocial, $color in $redesSociales {
-                .map-#{$redSocial} {
-                    background-color: $color;
-                }
-            }
-            /* MAP */
-
-            /* MAP-GET */
-            .map-instagram {
-                background-color: map-get($redesSociales, instagram);
-            }
-            /* MAP-GET */
-
-            /* EXTEND */
-            .map-whatsapp {
-
-                &:hover {
-                    outline: $detailsColor solid 3px;
-                }
-            }
-
-            .map-instagram,
-            .map-twitter,
-            .map-youtube {
-                @extend .map-whatsapp;
-                    border-radius: 50%;
-
-                &:hover {
-                    outline: white solid 5px;
-                }
-                
-            }
-            /* EXTEND */
-
-            /* MIXIN */
-            @mixin paddingmargin($padinline, $padblock, $marinline) {
-                padding-inline: $padinline;
-                padding-block: $padblock;
-                margin-inline: $marinline;
-            }
-            .map-instagram,
-            .map-whatsapp,
-            .map-twitter,
-            .map-youtube {
-                @include paddingmargin(1.8rem, 1rem, 1rem)
-            }
-            /* MIXIN */
         }
     }
 
