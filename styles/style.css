@@ -1,5 +1,6 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Mouse+Memoirs&family=Saira:wght@300;400;500;700&display=swap");
+/* MAP */
 * {
   padding: 0;
   margin: 0;
@@ -291,15 +292,63 @@ footer .redes .redes__lista {
   padding-left: 0;
   display: flex;
   list-style-type: none;
+  /* .map-instagram,
+  .map-twitter,
+  .map-youtube,
+  .map-whatsapp {
+      padding-inline: .8rem;
+  } Comentado para no perderlo en la entrega de SASS 2*/
+  /* MAP */
+  /* MAP */
+  /* MAP-GET */
+  /* MAP-GET */
+  /* EXTEND */
+  /* EXTEND */
+  /* MIXIN */
+  /* MIXIN */
 }
 footer .redes .redes__lista li a i {
   color: white;
 }
-footer .redes .redes__lista .instagram,
-footer .redes .redes__lista .twitter,
-footer .redes .redes__lista .youtube,
-footer .redes .redes__lista .whatsapp {
-  padding-inline: 0.8rem;
+footer .redes .redes__lista .map-whatsapp, footer .redes .redes__lista .map-instagram,
+footer .redes .redes__lista .map-twitter,
+footer .redes .redes__lista .map-youtube {
+  background-color: #00cf00;
+}
+footer .redes .redes__lista .map-instagram {
+  background-color: #f93d78;
+}
+footer .redes .redes__lista .map-twitter {
+  background-color: #00bfff;
+}
+footer .redes .redes__lista .map-youtube {
+  background-color: #db1717;
+}
+footer .redes .redes__lista .map-instagram {
+  background-color: #f93d78;
+}
+footer .redes .redes__lista .map-whatsapp:hover, footer .redes .redes__lista .map-instagram:hover,
+footer .redes .redes__lista .map-twitter:hover,
+footer .redes .redes__lista .map-youtube:hover {
+  outline: #2559e9 solid 3px;
+}
+footer .redes .redes__lista .map-instagram,
+footer .redes .redes__lista .map-twitter,
+footer .redes .redes__lista .map-youtube {
+  border-radius: 50%;
+}
+footer .redes .redes__lista .map-instagram:hover,
+footer .redes .redes__lista .map-twitter:hover,
+footer .redes .redes__lista .map-youtube:hover {
+  outline: white solid 5px;
+}
+footer .redes .redes__lista .map-instagram,
+footer .redes .redes__lista .map-whatsapp,
+footer .redes .redes__lista .map-twitter,
+footer .redes .redes__lista .map-youtube {
+  padding-inline: 1.8rem;
+  padding-block: 1rem;
+  margin-inline: 1rem;
 }
 footer .footer__copy {
   padding-block: 0.3rem;
@@ -868,4 +917,4 @@ section .productos2 {
   .sobreNosotros .sobreNosotros-container .card-sobreNosotros {
     width: 70vw;
   }
-}
+}/*# sourceMappingURL=style.css.map */

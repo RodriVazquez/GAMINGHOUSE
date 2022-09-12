@@ -38,12 +38,60 @@ footer {
                 }
             }
 
-            .instagram,
-            .twitter,
-            .youtube,
-            .whatsapp {
+            /* .map-instagram,
+            .map-twitter,
+            .map-youtube,
+            .map-whatsapp {
                 padding-inline: .8rem;
+            } Comentado para no perderlo en la entrega de SASS 2*/
+
+            /* MAP */
+            @each $redSocial, $color in $redesSociales {
+                .map-#{$redSocial} {
+                    background-color: $color;
+                }
             }
+            /* MAP */
+
+            /* MAP-GET */
+            .map-instagram {
+                background-color: map-get($redesSociales, instagram);
+            }
+            /* MAP-GET */
+
+            /* EXTEND */
+            .map-whatsapp {
+
+                &:hover {
+                    outline: $detailsColor solid 3px;
+                }
+            }
+
+            .map-instagram,
+            .map-twitter,
+            .map-youtube {
+                @extend .map-whatsapp;
+
+                &:hover {
+                    outline: white solid 5px;
+                }
+                border-radius: 50%;
+            }
+            /* EXTEND */
+
+            /* MIXIN */
+            @mixin paddingmargin($padinline, $padblock, $marinline) {
+                padding-inline: $padinline;
+                padding-block: $padblock;
+                margin-inline: $marinline;
+            }
+            .map-instagram,
+            .map-whatsapp,
+            .map-twitter,
+            .map-youtube {
+                @include paddingmargin(1.8rem, 1rem, 1rem)
+            }
+            /* MIXIN */
         }
     }
 

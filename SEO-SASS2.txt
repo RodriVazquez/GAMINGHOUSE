@@ -1,0 +1,10 @@
+SEO:
+-Cambié los títulos en el head de todas las páginas para que queden mas prolijos.
+-Acomodé todo el head para que esté en el orden correcto.
+-agregué keywords en todas las páginas. 
+
+SASS 2: 
+- Apliqué todo lo que pide este desafío en los íconos del footer del index.
+   El archivo .sass donde están los cambios se llama "_footer.scss". y el map está
+   declarado en el archivo "_variables.scss". Dejé todo señalado con comentarios
+   para que la corrección sea sencilla. 
