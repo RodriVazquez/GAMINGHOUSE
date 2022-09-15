@@ -75,7 +75,8 @@ main .video {
 
 div .titulo {
   margin: 0;
-  padding-block: 0.8rem;
+  margin-top: -0.4rem;
+  padding-block: 0.7rem;
   background-image: url(../images/titulos7.jpg);
   background-size: cover;
   background-repeat: no-repeat;
@@ -661,11 +662,11 @@ section .formulario div .animate__pulse {
   width: 100vw;
   display: flex;
   justify-content: center;
-  gap: 1.5rem;
+  gap: 0.5rem;
 }
 .sobreNosotros .sobreNosotros-container .card-sobreNosotros {
-  height: 29vh;
-  width: 18vw;
+  height: 35vh;
+  width: 19vw;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -689,6 +690,19 @@ section .formulario div .animate__pulse {
 }
 
 /*** Media Queries ***/
+@media screen and (max-width: 1280px) {
+  section .productos1,
+section .productos2 {
+    display: flex;
+    flex-direction: column;
+  }
+  .sobreNosotros .sobreNosotros-container .card-sobreNosotros .tituloCard {
+    font-size: 130%;
+  }
+  .sobreNosotros .sobreNosotros-container .card-sobreNosotros .card-text {
+    font-size: 95%;
+  }
+}
 @media screen and (max-width: 1024px) {
   header .navegacionIndex {
     background-color: black;
@@ -749,31 +763,6 @@ section .marcas .amd {
   header .navegacion .nav__menu .nav__item {
     padding-inline: 0.3rem;
   }
-  /*** PRODUCTOS ***/
-  section .productos1 .mother1 img {
-    width: 18vw;
-  }
-  section .productos1 .mother2 img {
-    width: 18vw;
-  }
-  section .productos1 .cpu2 img {
-    width: 18vw;
-  }
-  section .productos1 .cpu1 img {
-    width: 18vw;
-  }
-  section .productos1 .fuente img {
-    width: 20vw;
-  }
-  section .productos2 .teclado1 img {
-    width: 18vw;
-  }
-  section .productos2 .redragonT img {
-    width: 18vw;
-  }
-  section .productos2 .auris2 img {
-    width: 18vw;
-  }
   /*** SOBRE NOSOTROS ***/
   .sobreNosotros .sobreNosotros-container {
     margin-top: -3rem;
@@ -784,6 +773,70 @@ section .marcas .amd {
   }
   .sobreNosotros .sobreNosotros-container .card-sobreNosotros {
     width: 50vw;
+  }
+}
+@media screen and (max-width: 966px) {
+  section .displaySubTitulo .subTitulo {
+    font-size: 200%;
+    width: 30vw;
+  }
+}
+@media screen and (max-width: 880px) {
+  header .navegacionIndex {
+    width: 100%;
+    padding-inline: 1.6rem;
+    padding-top: 1.6rem;
+    padding-bottom: 2.1rem;
+    margin-bottom: 0.1rem;
+    background-color: rgb(0, 0, 0);
+  }
+  header .navegacionIndex .nav__label {
+    display: block;
+    cursor: pointer;
+  }
+  header .navegacionIndex .nav__input:checked + .nav__menu {
+    background-color: #a850ff;
+    -webkit-clip-path: circle(100% at center);
+            clip-path: circle(100% at center);
+  }
+  header .nav__menu {
+    padding-bottom: 7rem;
+    position: fixed;
+    top: 7.6rem;
+    bottom: 0;
+    width: 100%;
+    height: 90vh;
+    padding-left: 0;
+    left: 0;
+    background-color: #a850ff;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+    -webkit-clip-path: circle(0 at center);
+            clip-path: circle(0 at center);
+    transition: -webkit-clip-path 0.7s ease-in-out;
+    transition: clip-path 0.7s ease-in-out;
+    transition: clip-path 0.7s ease-in-out, -webkit-clip-path 0.7s ease-in-out;
+  }
+  header .navegacion {
+    width: 100%;
+    padding: 1.6rem;
+    margin-bottom: 0.1rem;
+    background-color: rgb(0, 0, 0);
+  }
+  header .navegacion .nav__label {
+    display: block;
+    cursor: pointer;
+  }
+  header .navegacion .nav__input:checked + .nav__menu {
+    background-color: #a850ff;
+    -webkit-clip-path: circle(100% at center);
+            clip-path: circle(100% at center);
+  }
+  header .navegacion .nav__menu {
+    padding-bottom: 7rem;
+    padding-left: 0;
   }
 }
 @media screen and (max-width: 600px) {
@@ -805,12 +858,13 @@ section .marcas .amd {
             clip-path: circle(100% at center);
   }
   header .nav__menu {
-    padding-block: 5rem;
+    padding-bottom: 7rem;
     position: fixed;
     top: 7.6rem;
     bottom: 0;
     width: 100%;
     height: 90vh;
+    padding-left: 0;
     left: 0;
     background-color: #a850ff;
     display: flex;
@@ -835,7 +889,7 @@ section .marcas .amd {
     padding-bottom: 4rem;
   }
   section .concretados .row-index .card-index {
-    width: 23rem;
+    width: 70vw;
   }
   section .marcas {
     margin-left: 0;
@@ -906,7 +960,17 @@ section .marcas .amd {
     width: 70vw;
   }
   section .preFooter .newsletter {
+    width: 80vw;
     margin-left: -2%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  section .preFooter .newsletter .newsletter__datos .formIndex {
+    display: flex;
+    flex-direction: column;
   }
   section .preFooter .newsletter .newsletter__datos .formIndex .input__group .input:focus ~ label, section .preFooter .newsletter .newsletter__datos .formIndex .input__group .input:valid ~ label {
     background-color: #6C009E;
@@ -928,7 +992,8 @@ section .marcas .amd {
             clip-path: circle(100% at center);
   }
   header .navegacion .nav__menu {
-    padding-block: 5rem;
+    padding-bottom: 7rem;
+    padding-left: 0;
   }
   /*** PRODUCTOS ***/
   .mainProductos .titulo2 {
@@ -938,53 +1003,9 @@ section .marcas .amd {
     width: 45vw;
     font-size: 200%;
   }
-  section .productos1 {
-    display: flex;
-    flex-direction: column;
-  }
-  section .productos1 .mother1 img {
-    width: -webkit-max-content;
-    width: -moz-max-content;
-    width: max-content;
-  }
-  section .productos1 .mother2 img {
-    width: -webkit-max-content;
-    width: -moz-max-content;
-    width: max-content;
-  }
-  section .productos1 .cpu2 img {
-    width: -webkit-max-content;
-    width: -moz-max-content;
-    width: max-content;
-  }
-  section .productos1 .cpu1 img {
-    width: -webkit-max-content;
-    width: -moz-max-content;
-    width: max-content;
-  }
-  section .productos1 .fuente img {
-    width: -webkit-max-content;
-    width: -moz-max-content;
-    width: max-content;
-  }
-  section .productos2 {
-    display: flex;
-    flex-direction: column;
-  }
-  section .productos2 .teclado1 img {
-    width: -webkit-max-content;
-    width: -moz-max-content;
-    width: max-content;
-  }
-  section .productos2 .redragonT img {
-    width: -webkit-max-content;
-    width: -moz-max-content;
-    width: max-content;
-  }
-  section .productos2 .auris2 img {
-    width: -webkit-max-content;
-    width: -moz-max-content;
-    width: max-content;
+  section .productos1 .mother1 img,
+section .productos1 .mother2 img {
+    width: 50vw;
   }
   /*** PCs ARMADAS ***/
   main .titulo3 {
@@ -1014,5 +1035,11 @@ section .marcas .amd {
   }
   .sobreNosotros .sobreNosotros-container .card-sobreNosotros {
     width: 70vw;
+  }
+  .sobreNosotros .sobreNosotros-container .card-sobreNosotros .tituloCard {
+    font-size: 130%;
+  }
+  .sobreNosotros .sobreNosotros-container .card-sobreNosotros .card-text {
+    font-size: 80%;
   }
 }/*# sourceMappingURL=style.css.map */

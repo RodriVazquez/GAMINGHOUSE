@@ -20,12 +20,13 @@
             }
 
             .nav__menu {
-                padding-block: 5rem;
+                padding-bottom: 7rem;
                 position: fixed;
                 top: 7.6rem;
                 bottom: 0;
                 width: 100%;
                 height: 90vh;
+                padding-left: 0;
                 left: 0;
                 background-color: #a850ff;
                 display: flex;
@@ -58,7 +59,7 @@
 
             .row-index {
                 .card-index {
-                    width: 23rem;
+                    width: 70vw;
                 }
             }
         }
@@ -124,10 +125,19 @@
             }
 
             .newsletter {
+                width: 80vw;
                 margin-left: -2%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
                 
                 .newsletter__datos{
                     .formIndex {
+                        display: flex;
+                        flex-direction: column;
+                        
                         .input__group {
                             .input {
                                 &:focus ~ label,
@@ -163,7 +173,8 @@
             }
 
             .nav__menu {
-                padding-block: 5rem;
+                padding-bottom: 7rem;
+                padding-left: 0;
             }   
         }
     }
@@ -186,58 +197,10 @@
         }
 
         .productos1 {
-            display: flex;
-            flex-direction: column;
-
-            .mother1 {
-                img {
-                width: max-content;
-                }
-            }
-
+            .mother1,
             .mother2 {
                 img {
-                width: max-content;
-                }
-            }
-
-            .cpu2 {
-                img {
-                width: max-content;
-                }
-            }
-
-            .cpu1 {
-                img {
-                width: max-content;
-                }
-            }
-
-            .fuente {
-                img {
-                width: max-content;
-                }
-            }
-        }
-        .productos2 {
-            display: flex;
-            flex-direction: column;
-
-            .teclado1 {
-                img {
-                width: max-content;
-                }
-            }
-
-            .redragonT {
-                img {
-                width: max-content;
-                }
-            }
-
-            .auris2 {
-                img {
-                width: max-content;
+                width: 50vw;
                 }
             }
         }
@@ -282,6 +245,14 @@
 
             .card-sobreNosotros {
                 width: 70vw;
+
+                .tituloCard {
+                    font-size: 130%;
+                }
+
+                .card-text {
+                    font-size: 80%;
+                }
             }
         }
     }

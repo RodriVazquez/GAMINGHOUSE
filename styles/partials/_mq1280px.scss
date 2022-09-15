@@ -1,0 +1,23 @@
+@media screen and (max-width: 1280px) {
+    section {
+        .productos1,
+        .productos2 {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+
+        .sobreNosotros {
+            .sobreNosotros-container {
+                .card-sobreNosotros {
+                    .tituloCard {
+                        font-size: 130%;
+                    }
+
+                    .card-text {
+                        font-size: 95%;
+                    }
+                }
+            }
+        }
+}
