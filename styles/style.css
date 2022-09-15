@@ -15,6 +15,14 @@ body {
   background-position: center center;
   overflow-x: hidden;
 }
+body::-webkit-scrollbar {
+  width: 12px;
+  background: rgb(30, 30, 30);
+}
+body::-webkit-scrollbar-thumb {
+  background: #2559e9;
+  border-radius: 5px;
+}
 
 /*** INDEX ***/
 header .navegacionIndex {
@@ -294,6 +302,18 @@ footer .redes .redes__lista {
 }
 footer .redes .redes__lista li a i {
   color: white;
+}
+footer .redes .redes__lista li a .bi-whatsapp:hover {
+  color: #3ecd53;
+}
+footer .redes .redes__lista li a .bi-instagram:hover {
+  color: #eb6278;
+}
+footer .redes .redes__lista li a .bi-twitter:hover {
+  color: #00c3ff;
+}
+footer .redes .redes__lista li a .bi-youtube:hover {
+  color: #ff002b;
 }
 footer .redes .redes__lista .instagram,
 footer .redes .redes__lista .twitter,
@@ -1042,4 +1062,4 @@ section .productos1 .mother2 img {
   .sobreNosotros .sobreNosotros-container .card-sobreNosotros .card-text {
     font-size: 80%;
   }
-}/*# sourceMappingURL=style.css.map */
+}

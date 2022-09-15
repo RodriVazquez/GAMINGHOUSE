@@ -4,4 +4,14 @@ body {
     background-size: cover;
     background-position: center center;
     overflow-x: hidden;
+
+    &::-webkit-scrollbar {
+        width: 12px;
+        background: rgb(30, 30, 30);
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background: $detailsColor;
+        border-radius: 5px;
+    }
 }
